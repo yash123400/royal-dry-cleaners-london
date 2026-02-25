@@ -1,0 +1,11 @@
+{
+  "business_name": "Royal Dry Cleaners",
+  "template": "Baker Street / LuxePress",
+  "created_at": "2026-02-25",
+  "status": "Ready for deployment",
+  "features": [
+    "Glassmorphism UI",
+    "GHL Breakout",
+    "Heritage/About Section"
+  ]
+}

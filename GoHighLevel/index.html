@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Dry Cleaners - Premium Garment Care Since 1982</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Feather Icons for lightweight SVGs -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D0D0D',
+                        secondary: '#1A1A1A',
+                        royal: '#6366f1', // Indigo accent
+                        muted: 'rgba(255, 255, 255, 0.6)',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0D0D0D;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .glass {
+            backdrop-filter: blur(24px);
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Sticky Navigation transition */
+        .nav-scrolled {
+            background-color: rgba(13, 13, 13, 0.9);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* GoHighLevel Container Breakout */
+        .ghl-breakout {
+            width: 100vw !important;
+            position: relative !important;
+            left: 50% !important;
+            right: 50% !important;
+            margin-left: -50vw !important;
+            margin-right: -50vw !important;
+            max-width: 100vw !important;
+            background-color: #0D0D0D !important;
+            color: white !important;
+            overflow-x: hidden !important;
+        }
+
+        /* Enforce Tailwind baseline styling to prevent inheritance mixing */
+        .ghl-breakout * {
+            box-sizing: border-box;
+            background-blend-mode: normal;
+        }
+
+        .royal-gradient {
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+        }
+    </style>
+</head>
+
+<body class="selection:bg-indigo-500 selection:text-white">
+
+    <!-- GoHighLevel Breakout Wrapper -->
+    <div class="ghl-breakout">
+
+        <!-- Navigation -->
+        <header id="navbar"
+            class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 md:px-12 py-4 flex items-center justify-between bg-transparent">
+            <div class="flex items-center gap-8">
+                <a href="#" class="text-2xl font-serif tracking-tighter italic font-bold">Royal Dry Cleaners</a>
+                <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-muted">
+                    <a href="#services" class="hover:text-white transition-colors">Services</a>
+                    <a href="#about" class="hover:text-white transition-colors">About Us</a>
+                    <a href="#reviews" class="hover:text-white transition-colors">Reviews</a>
+                    <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+                </nav>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="tel:+442078334984"
+                    class="hidden lg:flex items-center gap-2 text-sm font-semibold hover:text-white transition-colors">
+                    <i data-feather="phone" class="w-4 h-4 text-indigo-400"></i>
+                    <span>020 7833 4984</span>
+                </a>
+                <button aria-label="Book Online"
+                    class="hidden sm:block px-6 py-2 rounded-full bg-indigo-600 text-white text-sm font-bold hover:bg-indigo-500 transition-all duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500/50">
+                    Book Now
+                </button>
+                <button aria-label="Toggle Menu"
+                    class="md:hidden text-white hover:bg-white/10 p-2 rounded-full transition-colors cursor-pointer">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="relative h-screen w-full overflow-hidden flex items-center justify-center px-6">
+                <!-- Cinematic Background -->
+                <div class="absolute inset-0 z-0">
+                    <img src="https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=2071&auto=format&fit=crop"
+                        alt="Royal Dry Cleaners Premium Interior" loading="eager"
+                        class="w-full h-full object-cover opacity-50 scale-105 animate-pulse-slow" />
+                    <div class="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/40 via-transparent to-[#0D0D0D]"></div>
+                </div>
+
+                <!-- Glassmorphism Card -->
+                <div
+                    class="relative z-10 max-w-2xl w-full glass rounded-3xl p-8 md:p-12 text-center transform transition-all duration-1000 ease-out translate-y-0 opacity-100">
+                    <span class="text-xs uppercase tracking-[0.3em] text-indigo-400 mb-4 block">
+                        ESTABLISHED 1982
+                    </span>
+                    <h1 class="text-4xl md:text-6xl font-serif italic mb-6 leading-tight text-white">
+                        Treat Your Garments to the Royal Treatment
+                    </h1>
+                    <p class="text-lg text-muted mb-6 max-w-md mx-auto leading-relaxed">
+                        Expert dry cleaning, delicate alterations, and specialized care in Clerkenwell.
+                        <strong>"It's the care we take that makes the difference."</strong>
+                    </p>
+                    <div
+                        class="flex items-center justify-center gap-2 text-sm font-medium text-emerald-400 mb-8 pb-6 border-b border-white/10 max-w-xs mx-auto">
+                        <i data-feather="check-circle" class="w-4 h-4"></i>
+                        <span>Family Run • In-Store Cleaning • Same-Day Service</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="tel:+442078334984"
+                            class="w-full sm:w-auto px-8 py-4 rounded-full bg-indigo-600 text-white font-bold text-lg hover:bg-indigo-500 hover:scale-105 transition-all duration-300 shadow-lg shadow-indigo-500/20 text-center">
+                            Call to Book
+                        </a>
+                        <a href="#services"
+                            class="w-full sm:w-auto px-8 py-4 rounded-full border border-white/20 hover:bg-white/5 transition-colors duration-200 text-lg text-center">
+                            Our Services
+                        </a>
+                    </div>
+
+                    <div class="mt-10 flex items-center justify-center gap-8 border-t border-white/5 pt-8">
+                        <div class="flex flex-col items-center">
+                            <span class="text-2xl font-bold">40+</span>
+                            <span class="text-[10px] uppercase tracking-widest text-muted">Years Experience</span>
+                        </div>
+                        <div class="w-px h-8 bg-white/10"></div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-2xl font-bold">On-Site</span>
+                            <span class="text-[10px] uppercase tracking-widest text-muted">Cleaning</span>
+                        </div>
+                        <div class="w-px h-8 bg-white/10"></div>
+                        <div class="flex flex-col items-center">
+                            <div class="flex items-center text-yellow-500 gap-1 pb-1">
+                                <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                                <i data-feather="star" class="w-3 h-3 fill-current"></i>
+                            </div>
+                            <span class="text-[10px] uppercase tracking-widest text-muted">4.9/5 Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Bar -->
+            <div class="py-12 border-y border-white/5 bg-primary flex flex-wrap justify-center gap-12 md:gap-24 px-6">
+                <div class="flex items-center gap-3">
+                    <i data-feather="zap" class="text-indigo-400 w-6 h-6"></i>
+                    <div>
+                        <div class="font-medium text-white">2-Hour Service</div>
+                        <div class="text-xs text-muted">Express cleaning available</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i data-feather="scissors" class="text-indigo-400 w-6 h-6"></i>
+                    <div>
+                        <div class="font-medium text-white">Expert Alterations</div>
+                        <div class="text-xs text-muted">Bespoke tailoring on-site</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i data-feather="droplet" class="text-indigo-400 w-6 h-6"></i>
+                    <div>
+                        <div class="font-medium text-white">Specialist Care</div>
+                        <div class="text-xs text-muted">Leather, Suede & Silk experts</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <section id="about" class="py-24 px-6 md:px-12 bg-black overflow-hidden relative">
+                <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+                    <div class="flex-1 space-y-8">
+                        <div
+                            class="inline-block px-4 py-1 rounded-full border border-indigo-500/30 text-indigo-400 text-xs font-bold tracking-widest uppercase">
+                            Our Story
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-serif italic text-white leading-tight">
+                            A Legacy of Excellence in Clerkenwell
+                        </h2>
+                        <p class="text-lg text-muted leading-relaxed">
+                            Royal Dry Cleaners has been a pillar of the Clerkenwell community since 1982. As a
+                            family-run business, we believe that true dry cleaning is an art form. Unlike many modern
+                            services, we process every single garment in-store, ensuring total control over the quality
+                            and care your items receive.
+                        </p>
+                        <p class="text-lg text-muted leading-relaxed">
+                            Whether it's a cherished wedding dress, a tailored suit, or your everyday business wear, our
+                            team—led by Master Tailor Ali—applies decades of expertise to every stitch and stain.
+                        </p>
+                        <div class="grid grid-cols-2 gap-8 pt-4">
+                            <div>
+                                <h3 class="text-indigo-400 font-bold text-lg mb-2">Heritage</h3>
+                                <p class="text-sm text-muted italic">Proudly serving London for over 40 years.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-indigo-400 font-bold text-lg mb-2">Convenience</h3>
+                                <p class="text-sm text-muted italic">Repairs, laundry, and key cutting under one roof.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 relative">
+                        <div class="absolute -inset-4 bg-indigo-500/10 blur-3xl rounded-full"></div>
+                        <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=2070&auto=format&fit=crop"
+                            alt="Professional tailoring"
+                            class="relative z-10 rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 aspect-square object-cover" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Grid -->
+            <section id="services" class="py-24 px-6 md:px-12 bg-[#0D0D0D]">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-5xl font-serif italic mb-4">Master Services</h2>
+                        <p class="text-muted max-w-lg mx-auto leading-relaxed">From everyday laundry to specialist
+                            garment restoration, we handle it all with the same meticulous care.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Service 1 -->
+                        <div
+                            class="p-8 rounded-3xl bg-white/5 border border-white/5 hover:border-indigo-500/30 transition-all group">
+                            <div
+                                class="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <i data-feather="check-square" class="text-indigo-400"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4 text-white">Full Dry Cleaning</h3>
+                            <p class="text-muted text-sm leading-relaxed mb-6">Shirts, suits, evening wear, and coats.
+                                Hand-finished and inspected multiple times before collection.</p>
+                            <ul class="space-y-2 text-xs text-indigo-400/80 font-medium">
+                                <li class="flex items-center gap-2">2-Hour Service Available</li>
+                                <li class="flex items-center gap-2">Eco-Friendly Solvents</li>
+                            </ul>
+                        </div>
+                        <!-- Service 2 -->
+                        <div
+                            class="p-8 rounded-3xl bg-white/5 border border-white/5 hover:border-indigo-500/30 transition-all group">
+                            <div
+                                class="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <i data-feather="scissors" class="text-indigo-400"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4 text-white">Repairs & Alterations</h3>
+                            <p class="text-muted text-sm leading-relaxed mb-6">Expert resizing, zip replacements, and
+                                bespoke tailoring. Specialist in leather and suede adjustments.</p>
+                            <ul class="space-y-2 text-xs text-indigo-400/80 font-medium">
+                                <li class="flex items-center gap-2">Tailor on-site daily</li>
+                                <li class="flex items-center gap-2">Complex alterations</li>
+                            </ul>
+                        </div>
+                        <!-- Service 3 -->
+                        <div
+                            class="p-8 rounded-3xl bg-white/5 border border-white/5 hover:border-indigo-500/30 transition-all group">
+                            <div
+                                class="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <i data-feather="heart" class="text-indigo-400"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4 text-white">Wedding & Delicate</h3>
+                            <p class="text-muted text-sm leading-relaxed mb-6">Specialized preservation of wedding gowns
+                                and vintage items. Hand-cleaning and acid-free boxing.</p>
+                            <ul class="space-y-2 text-xs text-indigo-400/80 font-medium">
+                                <li class="flex items-center gap-2">Preservation Specialist</li>
+                                <li class="flex items-center gap-2">Delicate Silk Care</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reviews Section -->
+            <section id="reviews" class="py-24 px-6 md:px-12 bg-[#111111]">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-5xl font-serif italic mb-4">Trusted by Londoners</h2>
+                        <div class="flex items-center justify-center gap-2 text-muted">
+                            <div class="flex items-center text-yellow-500 gap-1">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <span>4.9/5 based on 300+ Verified Reviews</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Review 1 -->
+                        <div class="p-8 rounded-3xl bg-black border border-white/5 relative">
+                            <i data-feather="quote" class="absolute top-6 right-8 text-indigo-500/20 w-8 h-8"></i>
+                            <p class="text-muted mb-6 italic leading-relaxed font-serif">"Exceptional service. I brought
+                                in a vintage dress with tough stains and they brought it back to life. Truly the best in
+                                Clerkenwell."</p>
+                            <div class="font-medium text-white">— Julian Davies</div>
+                        </div>
+                        <!-- Review 2 -->
+                        <div class="p-8 rounded-3xl bg-black border border-white/5 relative">
+                            <i data-feather="quote" class="absolute top-6 right-8 text-indigo-500/20 w-8 h-8"></i>
+                            <p class="text-muted mb-6 italic leading-relaxed font-serif">"Ali is a wizard with
+                                alterations. He perfectly adjusted three of my suits and the turnaround was incredibly
+                                fast. Highly recommend."</p>
+                            <div class="font-medium text-white">— Marcus Thorne</div>
+                        </div>
+                        <!-- Review 3 -->
+                        <div class="p-8 rounded-3xl bg-black border border-white/5 relative">
+                            <i data-feather="quote" class="absolute top-6 right-8 text-indigo-500/20 w-8 h-8"></i>
+                            <p class="text-muted mb-6 italic leading-relaxed font-serif">"Honest, family-run, and they
+                                actually care about your clothes. The in-store cleaning makes a huge difference in
+                                quality."</p>
+                            <div class="font-medium text-white">— Sophia Knight</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact/Lead Section -->
+            <section id="contact" class="py-24 px-6 md:px-12 bg-black">
+                <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="glass p-8 md:p-12 rounded-3xl border border-white/10">
+                        <h2 class="text-3xl font-serif italic mb-6">Find Our Boutique</h2>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <i data-feather="map-pin" class="w-6 h-6 text-indigo-400 shrink-0 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-white mb-1">Address</h4>
+                                    <p class="text-muted">46 Rosebery Avenue<br />London, EC1R 4RP</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i data-feather="clock" class="w-6 h-6 text-indigo-400 shrink-0 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-white mb-1">Opening Hours</h4>
+                                    <div class="grid grid-cols-2 gap-x-8 text-sm text-muted">
+                                        <span>Mon - Fri:</span> <span>8:00 AM - 7:00 PM</span>
+                                        <span>Saturday:</span> <span>8:00 AM - 6:00 PM</span>
+                                        <span>Sunday:</span> <span>10:00 AM - 4:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i data-feather="mail" class="w-6 h-6 text-indigo-400 shrink-0 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-white mb-1">Email</h4>
+                                    <p class="text-muted">Royaldrycleanerswapping@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/5 p-8 md:p-12 rounded-3xl border border-white/5">
+                        <h2 class="text-3xl font-serif italic mb-6">Book a Collection</h2>
+                        <p class="text-muted mb-8">Short on time? Let us handle the transport. Enter your details and
+                            we'll call to arrange a convenient pickup.</p>
+                        <form class="space-y-4">
+                            <input type="text" placeholder="Your Name"
+                                class="w-full px-6 py-4 rounded-full bg-white/5 border border-white/10 text-white focus:border-indigo-500 outline-none transition-all" />
+                            <input type="tel" placeholder="Phone Number"
+                                class="w-full px-6 py-4 rounded-full bg-white/5 border border-white/10 text-white focus:border-indigo-500 outline-none transition-all" />
+                            <select
+                                class="w-full px-6 py-4 rounded-full bg-white/5 border border-white/10 text-muted focus:border-indigo-500 outline-none transition-all appearance-none">
+                                <option>Select Service Type</option>
+                                <option>Full Dry Cleaning</option>
+                                <option>Alterations & Repairs</option>
+                                <option>Specialist Cleaning</option>
+                            </select>
+                            <button
+                                class="w-full py-4 rounded-full bg-indigo-600 text-white font-bold hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-500/20">
+                                Request Callback
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-16 px-6 md:px-12 border-t border-white/5 bg-[#0D0D0D]">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+                <div>
+                    <a href="#"
+                        class="text-2xl font-serif tracking-tighter italic font-bold mb-4 block text-indigo-400">Royal
+                        Dry Cleaners</a>
+                    <p class="text-xs text-muted">© 2026 Royal Dry Cleaners & Tailors. Clerkenwell, London.</p>
+                </div>
+
+                <div class="flex gap-8 text-xs font-bold tracking-widest uppercase text-muted">
+                    <a href="#" class="hover:text-white transition-colors">Privacy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms</a>
+                    <a href="#" class="hover:text-white transition-colors">Careers</a>
+                </div>
+
+                <div class="flex gap-4">
+                    <a href="#" class="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
+                        <i data-feather="instagram" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#" class="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors">
+                        <i data-feather="facebook" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Initialize Scripts -->
+        <script>
+            // Initialize Feather Icons
+            feather.replace();
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', () => {
+                const nav = document.getElementById('navbar');
+                if (window.scrollY > 50) {
+                    nav.classList.add('nav-scrolled');
+                } else {
+                    nav.classList.remove('nav-scrolled');
+                }
+            });
+
+            // GoHighLevel parent container fix
+            (function () {
+                var el = document.querySelector('.ghl-breakout');
+                if (!el) return;
+                var parent = el.parentElement;
+                while (parent && parent !== document.documentElement) {
+                    parent.style.padding = '0';
+                    parent.style.margin = '0';
+                    parent.style.maxWidth = 'none';
+                    parent.style.width = '100%';
+                    parent.style.backgroundColor = '#0D0D0D';
+                    parent.style.overflow = 'visible';
+                    parent = parent.parentElement;
+                }
+                document.documentElement.style.backgroundColor = '#0D0D0D';
+                document.body.style.backgroundColor = '#0D0D0D';
+                document.body.style.margin = '0';
+                document.body.style.padding = '0';
+            })();
+        </script>
+    </div>
+</body>
+
+</html>
